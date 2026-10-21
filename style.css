@@ -284,8 +284,8 @@ img {
     position: relative;
     z-index: 2;
     display: block;
-    height: calc(100vh - 70px) !important;
-    max-height: 900px;
+    height: calc(100vh - 20px) !important;
+    max-height: 940px;
     width: auto !important;
     max-width: 105%;
     object-fit: contain;
@@ -297,10 +297,10 @@ img {
     border-radius: 0 !important;
     box-shadow: none !important;
     filter: drop-shadow(0 20px 35px rgba(0, 87, 255, 0.35)) drop-shadow(0 25px 45px rgba(0, 0, 0, 0.85));
-    -webkit-mask-image: linear-gradient(to bottom, #000000 82%, rgba(0, 0, 0, 0) 100%);
-    mask-image: linear-gradient(to bottom, #000000 82%, rgba(0, 0, 0, 0) 100%);
-    /* ATUR BESAR-KECIL FOTO HOME DI SINI (scale 1.0 = sama seperti About) */
-    transform: scale(1.0);
+    -webkit-mask-image: linear-gradient(to bottom, #000000 92%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, #000000 92%, rgba(0, 0, 0, 0) 100%);
+    /* ATUR BESAR-KECIL FOTO HOME DI SINI */
+    transform: scale(1.10) translateY(-10px);
     transform-origin: bottom center;
     pointer-events: none;
     transition: all 0.3s ease;
@@ -474,7 +474,7 @@ img {
     background: radial-gradient(circle, rgba(0, 87, 255, 0.22) 0%, rgba(0, 20, 90, 0.05) 55%, transparent 72%);
     border: 1.5px solid rgba(0, 163, 255, 0.3);
     box-shadow: 0 0 50px rgba(0, 87, 255, 0.25), inset 0 0 35px rgba(0, 163, 255, 0.15);
-    top: 48%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -527,7 +527,7 @@ img {
     z-index: 2;
     display: block;
     height: calc(100vh - 70px) !important;
-    max-height: 900px;
+    max-height: 930px;
     width: auto !important;
     max-width: 105%;
     object-fit: contain;
@@ -539,10 +539,10 @@ img {
     border-radius: 0 !important;
     box-shadow: none !important;
     filter: drop-shadow(0 20px 35px rgba(0, 87, 255, 0.35)) drop-shadow(0 25px 45px rgba(0, 0, 0, 0.85));
-    -webkit-mask-image: linear-gradient(to bottom, #000000 82%, rgba(0, 0, 0, 0) 100%);
-    mask-image: linear-gradient(to bottom, #000000 82%, rgba(0, 0, 0, 0) 100%);
-    /* ATUR BESAR-KECIL FOTO STUDY DI SINI (scale 1.0 = normal, 1.10 = lebih besar, 0.90 = lebih kecil) */
-    transform: scale(1.0);
+    -webkit-mask-image: linear-gradient(to bottom, #000000 92%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, #000000 92%, rgba(0, 0, 0, 0) 100%);
+    /* ATUR BESAR-KECIL & POSISI FOTO ABOUT DI SINI */
+    transform: scale(1.10) translateY(-10px);
     transform-origin: bottom center;
     pointer-events: none;
     transition: all 0.3s ease;
@@ -1009,7 +1009,7 @@ img {
     background: radial-gradient(circle, rgba(0, 87, 255, 0.22) 0%, rgba(0, 20, 90, 0.05) 55%, transparent 72%);
     border: 1.5px solid rgba(0, 163, 255, 0.3);
     box-shadow: 0 0 50px rgba(0, 87, 255, 0.25), inset 0 0 35px rgba(0, 163, 255, 0.15);
-    top: 48%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -1109,8 +1109,8 @@ img {
     border-radius: 0 !important;
     box-shadow: none !important;
     filter: drop-shadow(0 20px 35px rgba(0, 87, 255, 0.35)) drop-shadow(0 25px 45px rgba(0, 0, 0, 0.85));
-    -webkit-mask-image: linear-gradient(to bottom, #000000 82%, rgba(0, 0, 0, 0) 100%);
-    mask-image: linear-gradient(to bottom, #000000 82%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, #000000 92%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, #000000 92%, rgba(0, 0, 0, 0) 100%);
     /* ATUR BESAR-KECIL FOTO STUDY DI SINI (scale 1.05 = sedikit diperbesar) */
     transform: scale(1.05);
     transform-origin: bottom center;
@@ -1547,8 +1547,8 @@ img {
     border-radius: 0 !important;
     box-shadow: none !important;
     filter: drop-shadow(0 20px 35px rgba(0, 87, 255, 0.35)) drop-shadow(0 25px 45px rgba(0, 0, 0, 0.85));
-    -webkit-mask-image: linear-gradient(to bottom, #000000 82%, rgba(0, 0, 0, 0) 100%);
-    mask-image: linear-gradient(to bottom, #000000 82%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, #000000 92%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, #000000 92%, rgba(0, 0, 0, 0) 100%);
     /* ATUR BESAR-KECIL FOTO AWARDS DI SINI (scale 1.11) */
     transform: scale(1.11);
     transform-origin: bottom center;
@@ -2135,6 +2135,7 @@ img {
         margin: 0 auto;
         align-items: center;
         justify-content: center;
+        padding-top: 0.5rem;
     }
     .about-ambient-glow {
         width: 280px;
@@ -2144,9 +2145,10 @@ img {
     .about-tech-circle {
         width: 290px;
         height: 290px;
+        top: 50%;
     }
     .about-hero-person {
-        max-height: 420px;
+        max-height: 440px;
         height: auto !important;
         width: auto !important;
         max-width: 100%;
@@ -2205,7 +2207,7 @@ img {
         overflow-y: visible;
     }
     .study-hero-container {
-        flex-direction: column-reverse;
+        flex-direction: column;
         padding: 2rem 1.5rem 2rem;
         height: auto;
         gap: 2rem;
@@ -2261,7 +2263,7 @@ img {
         overflow-y: visible;
     }
     .awards-hero-container {
-        flex-direction: column-reverse;
+        flex-direction: column;
         padding: 2rem 1.5rem 2rem;
         height: auto;
         gap: 2rem;
@@ -2565,13 +2567,15 @@ img {
         width: 100%;
         max-width: 300px;
         margin: 0 auto;
+        padding-top: 0.3rem;
     }
     .about-tech-circle {
         width: 220px;
         height: 220px;
+        top: 50%;
     }
     .about-hero-person {
-        max-height: 290px;
+        max-height: 310px;
     }
     .about-hero-title {
         font-size: clamp(2rem, 8.5vw, 2.8rem);
