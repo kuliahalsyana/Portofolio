@@ -255,95 +255,18 @@ img {
 }
 
 .hero-image {
-    flex: 1.25;
-    max-width: 650px;
-    position: relative;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    align-self: flex-end;
-    line-height: 0;
-    height: 100%;
     animation: slideLeft 0.8s ease-out 0.2s both;
+    align-self: flex-end;
+    align-items: flex-end;
+    line-height: 0;   
 }
 
-.hero-ambient-glow {
-    position: absolute;
-    width: 480px;
-    height: 480px;
-    background: radial-gradient(circle, rgba(0, 87, 255, 0.42) 0%, rgba(0, 163, 255, 0.16) 45%, transparent 70%);
-    border-radius: 50%;
-    z-index: 1;
-    bottom: 5%;
-    filter: blur(60px);
-    pointer-events: none;
-    animation: pulseGlow 6s ease-in-out infinite alternate;
-}
-
-.hero-person-img {
-    position: relative;
-    z-index: 2;
+.hero-image img {
     display: block;
-    height: calc(100vh - 70px) !important;
-    max-height: 900px;
-    width: auto !important;
-    max-width: 105%;
-    object-fit: contain;
-    object-position: bottom center;
-    vertical-align: bottom;
-    margin-bottom: 0;
-    background: transparent !important;
-    border: none !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    filter: drop-shadow(0 20px 35px rgba(0, 87, 255, 0.35)) drop-shadow(0 25px 45px rgba(0, 0, 0, 0.85));
-    -webkit-mask-image: linear-gradient(to bottom, #000000 82%, rgba(0, 0, 0, 0) 100%);
-    mask-image: linear-gradient(to bottom, #000000 82%, rgba(0, 0, 0, 0) 100%);
-    /* ATUR BESAR-KECIL FOTO HOME DI SINI (scale 1.0 = sama seperti About) */
-    transform: scale(1.0);
-    transform-origin: bottom center;
-    pointer-events: none;
-    transition: all 0.3s ease;
-}
-
-.hero-floating-pill {
-    position: absolute;
-    bottom: 1.8rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.55rem;
-    background: rgba(18, 18, 18, 0.82);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border: 1px solid rgba(0, 163, 255, 0.45);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 87, 255, 0.25);
-    padding: 0.45rem 1.25rem;
-    border-radius: 9999px;
-    font-size: 0.82rem;
-    font-weight: 500;
-    color: #FFFFFF;
-    letter-spacing: 0.4px;
-    white-space: nowrap;
-    animation: slideUp 0.8s ease-out;
-    pointer-events: none;
-}
-
-.hero-pedestal-light {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 85%;
-    max-width: 440px;
-    height: 3px;
-    background: radial-gradient(ellipse at center, rgba(0, 163, 255, 0.85) 0%, rgba(0, 87, 255, 0.4) 45%, transparent 75%);
-    box-shadow: 0 -3px 20px rgba(0, 163, 255, 0.7), 0 0 35px rgba(0, 87, 255, 0.5);
-    z-index: 3;
-    border-radius: 50%;
-    pointer-events: none;
+    max-height: 85vh;      /* Pastikan tidak ada margin bawah */
+    margin-bottom: -4rem;
 }
 
 
@@ -443,7 +366,6 @@ img {
 
 .about-hero-right {
     flex: 1.25;
-    max-width: 650px;
     position: relative;
     display: flex;
     align-items: flex-end;
@@ -453,72 +375,16 @@ img {
     height: 100%;
 }
 
-.about-ambient-glow {
+.about-blue-circle {
     position: absolute;
-    width: 480px;
-    height: 480px;
-    background: radial-gradient(circle, rgba(0, 87, 255, 0.42) 0%, rgba(0, 163, 255, 0.16) 45%, transparent 70%);
+    width: 1400px;
+    height: 1400px;
+    background-color: #0057FF;
     border-radius: 50%;
+    right: -600px;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 1;
-    bottom: 5%;
-    filter: blur(60px);
-    pointer-events: none;
-    animation: pulseGlow 6s ease-in-out infinite alternate;
-}
-
-.about-tech-circle {
-    position: absolute;
-    width: 480px;
-    height: 480px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(0, 87, 255, 0.22) 0%, rgba(0, 20, 90, 0.05) 55%, transparent 72%);
-    border: 1.5px solid rgba(0, 163, 255, 0.3);
-    box-shadow: 0 0 50px rgba(0, 87, 255, 0.25), inset 0 0 35px rgba(0, 163, 255, 0.15);
-    top: 48%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    pointer-events: none;
-    animation: techCirclePulse 8s ease-in-out infinite alternate;
-}
-
-.about-floating-pill {
-    position: absolute;
-    bottom: 1.8rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.55rem;
-    background: rgba(18, 18, 18, 0.82);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border: 1px solid rgba(0, 163, 255, 0.45);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 87, 255, 0.25);
-    padding: 0.45rem 1.25rem;
-    border-radius: 9999px;
-    font-size: 0.82rem;
-    font-weight: 500;
-    color: #FFFFFF;
-    letter-spacing: 0.4px;
-    white-space: nowrap;
-    animation: slideUp 0.8s ease-out;
-    pointer-events: none;
-}
-
-.about-pedestal-light {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 85%;
-    max-width: 440px;
-    height: 3px;
-    background: radial-gradient(ellipse at center, rgba(0, 163, 255, 0.85) 0%, rgba(0, 87, 255, 0.4) 45%, transparent 75%);
-    box-shadow: 0 -3px 20px rgba(0, 163, 255, 0.7), 0 0 35px rgba(0, 87, 255, 0.5);
-    z-index: 3;
-    border-radius: 50%;
     pointer-events: none;
 }
 
@@ -526,25 +392,14 @@ img {
     position: relative;
     z-index: 2;
     display: block;
-    height: calc(100vh - 70px) !important;
-    max-height: 900px;
-    width: auto !important;
-    max-width: 105%;
+    height: calc(100vh - 70px);
+    max-height: 950px;
+    width: 88vh;
     object-fit: contain;
-    object-position: bottom center;
+    filter: drop-shadow(0 20px 45px rgba(0, 0, 0, 0.6));
+    right: -10vh;
+    margin-bottom: -3rem;
     vertical-align: bottom;
-    margin-bottom: 0;
-    background: transparent !important;
-    border: none !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    filter: drop-shadow(0 20px 35px rgba(0, 87, 255, 0.35)) drop-shadow(0 25px 45px rgba(0, 0, 0, 0.85));
-    -webkit-mask-image: linear-gradient(to bottom, #000000 82%, rgba(0, 0, 0, 0) 100%);
-    mask-image: linear-gradient(to bottom, #000000 82%, rgba(0, 0, 0, 0) 100%);
-    /* ATUR BESAR-KECIL FOTO STUDY DI SINI (scale 1.0 = normal, 1.10 = lebih besar, 0.90 = lebih kecil) */
-    transform: scale(1.0);
-    transform-origin: bottom center;
-    pointer-events: none;
     transition: all 0.3s ease;
 }
 
@@ -585,32 +440,17 @@ img {
     min-height: 550px;
 }
 
-.projects-ambient-glow {
-    position: absolute;
-    width: 520px;
-    height: 520px;
-    background: radial-gradient(circle, rgba(0, 87, 255, 0.45) 0%, rgba(0, 163, 255, 0.18) 45%, transparent 70%);
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    filter: blur(60px);
-    pointer-events: none;
-    z-index: 1;
-    animation: pulseGlow 6s ease-in-out infinite alternate;
-}
-
 .projects-orbit-ring {
     position: absolute;
-    width: 560px;
-    height: 560px;
+    width: 580px;
+    height: 580px;
     border: 1.5px dashed rgba(0, 163, 255, 0.35);
     border-radius: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     animation: rotateOrbit 25s linear infinite;
-    z-index: 2;
+    z-index: 1;
     pointer-events: none;
 }
 
@@ -622,32 +462,30 @@ img {
 .projects-badge-card {
     position: absolute;
     bottom: 25px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(18, 18, 18, 0.82);
-    border: 1px solid rgba(0, 163, 255, 0.45);
-    border-radius: 9999px;
-    padding: 0.45rem 1.35rem;
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    z-index: 10;
-    display: inline-flex;
+    left: 40px;
+    background: rgba(18, 18, 18, 0.88);
+    border: 1px solid rgba(0, 87, 255, 0.4);
+    border-left: 3px solid #0057FF;
+    border-radius: 10px;
+    padding: 0.6rem 1.2rem;
+    backdrop-filter: blur(10px);
+    z-index: 4;
+    display: flex;
     align-items: center;
-    gap: 0.65rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 87, 255, 0.25);
+    gap: 0.8rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
     animation: slideUp 0.6s ease-out;
-    white-space: nowrap;
 }
 
 .badge-num {
     font-family: 'Impact', 'Arial Black', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: #00A3FF;
     letter-spacing: 1px;
 }
 
 .badge-cat {
-    font-size: 0.8rem;
+    font-size: 0.82rem;
     font-weight: 500;
     color: #FFFFFF;
     text-transform: uppercase;
@@ -656,44 +494,23 @@ img {
 
 .projects-blue-circle {
     position: absolute;
-    width: 490px;
-    height: 490px;
+    width: 520px;
+    height: 520px;
+    background-color: #0057FF;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(0, 87, 255, 0.28) 0%, rgba(20, 20, 30, 0.75) 55%, rgba(18, 18, 18, 0.95) 100%);
-    border: 2px solid rgba(0, 163, 255, 0.45);
-    box-shadow: 0 0 50px rgba(0, 87, 255, 0.3), inset 0 0 40px rgba(0, 163, 255, 0.18);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    pointer-events: none;
-}
-
-.projects-pedestal-light {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 85%;
-    max-width: 440px;
-    height: 3px;
-    background: radial-gradient(ellipse at center, rgba(0, 163, 255, 0.85) 0%, rgba(0, 87, 255, 0.4) 45%, transparent 75%);
-    box-shadow: 0 -3px 20px rgba(0, 163, 255, 0.7), 0 0 35px rgba(0, 87, 255, 0.5);
-    z-index: 3;
-    border-radius: 50%;
-    pointer-events: none;
+    z-index: 1;
 }
 
 .projects-hero-img {
     position: relative;
-    z-index: 3;
-    max-width: 82%;
-    max-height: 440px;
+    z-index: 2;
+    max-width: 90%;
+    max-height: 520px;
     object-fit: contain;
-    filter: drop-shadow(0 20px 35px rgba(0, 87, 255, 0.4)) drop-shadow(0 25px 45px rgba(0, 0, 0, 0.85));
-    transition: all 0.35s ease;
+    filter: drop-shadow(0 15px 30px rgba(0,0,0,0.5));
 }
 
 .projects-hero-right {
@@ -749,11 +566,11 @@ img {
     border: 1.5px solid rgba(0, 87, 255, 0.35);
     color: #ffffff;
     font-family: 'Impact', 'Arial Black', sans-serif;
-    font-size: 1.15rem;
-    letter-spacing: 1px;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 0.45rem 0.6rem;
+    padding: 0.45rem 1rem;
     border-radius: 9999px;
     transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     cursor: pointer;
@@ -975,8 +792,8 @@ img {
 }
 
 .study-image-wrapper {
-    flex: 1.25;
-    max-width: 680px;
+    flex: 1.1;
+    max-width: 620px;
     position: relative;
     display: flex;
     align-items: flex-end;
@@ -1097,9 +914,9 @@ img {
     z-index: 2;
     display: block;
     height: calc(100vh - 70px) !important;
-    max-height: 920px;
+    max-height: 880px;
     width: auto !important;
-    max-width: 105%;
+    max-width: 100%;
     object-fit: contain;
     object-position: bottom center;
     vertical-align: bottom;
@@ -1111,9 +928,6 @@ img {
     filter: drop-shadow(0 20px 35px rgba(0, 87, 255, 0.35)) drop-shadow(0 25px 45px rgba(0, 0, 0, 0.85));
     -webkit-mask-image: linear-gradient(to bottom, #000000 82%, rgba(0, 0, 0, 0) 100%);
     mask-image: linear-gradient(to bottom, #000000 82%, rgba(0, 0, 0, 0) 100%);
-    /* ATUR BESAR-KECIL FOTO STUDY DI SINI (scale 1.05 = sedikit diperbesar) */
-    transform: scale(1.05);
-    transform-origin: bottom center;
     pointer-events: none;
 }
 
@@ -1506,8 +1320,8 @@ img {
 }
 
 .awards-image-wrapper {
-    flex: 1.25;
-    max-width: 680px;
+    flex: 1.1;
+    max-width: 620px;
     position: relative;
     display: flex;
     align-items: flex-end;
@@ -1519,9 +1333,9 @@ img {
 
 .awards-ambient-glow {
     position: absolute;
-    width: 480px;
-    height: 480px;
-    background: radial-gradient(circle, rgba(0, 87, 255, 0.42) 0%, rgba(0, 163, 255, 0.16) 45%, transparent 70%);
+    width: 460px;
+    height: 460px;
+    background: radial-gradient(circle, rgba(0, 87, 255, 0.4) 0%, rgba(0, 163, 255, 0.15) 45%, transparent 70%);
     border-radius: 50%;
     z-index: 1;
     bottom: 5%;
@@ -1535,9 +1349,9 @@ img {
     z-index: 2;
     display: block;
     height: calc(100vh - 70px) !important;
-    max-height: 920px;
+    max-height: 880px;
     width: auto !important;
-    max-width: 105%;
+    max-width: 100%;
     object-fit: contain;
     object-position: bottom center;
     vertical-align: bottom;
@@ -1549,9 +1363,6 @@ img {
     filter: drop-shadow(0 20px 35px rgba(0, 87, 255, 0.35)) drop-shadow(0 25px 45px rgba(0, 0, 0, 0.85));
     -webkit-mask-image: linear-gradient(to bottom, #000000 82%, rgba(0, 0, 0, 0) 100%);
     mask-image: linear-gradient(to bottom, #000000 82%, rgba(0, 0, 0, 0) 100%);
-    /* ATUR BESAR-KECIL FOTO AWARDS DI SINI (scale 1.11) */
-    transform: scale(1.11);
-    transform-origin: bottom center;
     pointer-events: none;
 }
 
@@ -2060,35 +1871,15 @@ img {
     }
     .hero-image {
         flex: 0 0 auto;
-        width: 100%;
-        max-width: 360px;
-        min-height: auto;
-        height: auto;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-        position: relative;
+        align-self: center;
+        margin-bottom: 0;
     }
-    .hero-ambient-glow {
-        width: 280px;
-        height: 280px;
-        bottom: 0;
-    }
-    .hero-person-img {
-        max-height: 420px;
-        height: auto !important;
-        width: auto !important;
-        max-width: 100%;
+    .hero-image img {
+        max-height: 42vh;
+        width: auto;
+        max-width: 80%;
         object-fit: contain;
-    }
-    .hero-floating-pill {
-        bottom: 0.8rem;
-        font-size: 0.76rem;
-        padding: 0.35rem 1rem;
-    }
-    .hero-pedestal-light {
-        width: 90%;
-        max-width: 290px;
+        margin-bottom: 0;
     }
     .hero-text {
         align-self: center;
@@ -2129,37 +1920,23 @@ img {
     }
     .about-hero-right {
         width: 100%;
-        max-width: 360px;
-        min-height: auto;
-        height: auto;
-        margin: 0 auto;
+        min-height: 300px;
+        max-height: 380px;
         align-items: center;
         justify-content: center;
     }
-    .about-ambient-glow {
-        width: 280px;
-        height: 280px;
-        bottom: 0;
-    }
-    .about-tech-circle {
-        width: 290px;
-        height: 290px;
+    .about-blue-circle {
+        width: 320px;
+        height: 320px;
+        right: 50%;
+        transform: translate(50%, -50%);
     }
     .about-hero-person {
-        max-height: 420px;
-        height: auto !important;
-        width: auto !important;
-        max-width: 100%;
+        max-height: 340px;
+        height: auto;
+        width: auto;
+        max-width: 85%;
         object-fit: contain;
-    }
-    .about-floating-pill {
-        bottom: 0.8rem;
-        font-size: 0.76rem;
-        padding: 0.35rem 1rem;
-    }
-    .about-pedestal-light {
-        width: 90%;
-        max-width: 290px;
     }
     .about-hero-left {
         max-width: 100%;
@@ -2343,30 +2120,13 @@ img {
         align-items: center;
         justify-content: center;
     }
-    .projects-ambient-glow {
-        width: 270px;
-        height: 270px;
-    }
-    .projects-orbit-ring {
-        width: 290px;
-        height: 290px;
-    }
     .projects-blue-circle {
         width: 260px;
         height: 260px;
     }
     .projects-hero-img {
-        max-height: 210px;
+        max-height: 220px;
         width: auto;
-    }
-    .projects-badge-card {
-        bottom: 8px;
-        padding: 0.35rem 1rem;
-        font-size: 0.75rem;
-    }
-    .projects-pedestal-light {
-        width: 90%;
-        max-width: 280px;
     }
     .projects-hero-right {
         width: 100%;
@@ -2389,10 +2149,9 @@ img {
         margin-bottom: 1.2rem;
     }
     .projects-pill-btn {
-        font-size: 1.05rem;
-        padding: 0.45rem 0.4rem;
+        font-size: 1.15rem;
+        padding: 0.45rem 0.6rem;
         width: 100%;
-        letter-spacing: 0.8px;
     }
     .project-showcase-card {
         max-width: 100%;
@@ -2540,15 +2299,9 @@ img {
         font-size: clamp(2.6rem, 13vw, 4.2rem);
         margin-bottom: 1rem;
     }
-    .hero-image {
-        max-width: 300px;
-    }
-    .hero-ambient-glow {
-        width: 220px;
-        height: 220px;
-    }
-    .hero-person-img {
-        max-height: 300px;
+    .hero-image img {
+        max-height: 32vh;
+        max-width: 90%;
     }
 
     /* About Slide */
@@ -2560,18 +2313,15 @@ img {
         gap: 1.5rem;
     }
     .about-hero-right {
-        min-height: auto;
-        max-height: none;
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto;
+        min-height: 220px;
+        max-height: 270px;
     }
-    .about-tech-circle {
+    .about-blue-circle {
         width: 220px;
         height: 220px;
     }
     .about-hero-person {
-        max-height: 290px;
+        max-height: 250px;
     }
     .about-hero-title {
         font-size: clamp(2rem, 8.5vw, 2.8rem);
@@ -2669,24 +2419,12 @@ img {
         min-height: 180px;
         max-height: 200px;
     }
-    .projects-ambient-glow {
-        width: 190px;
-        height: 190px;
-    }
-    .projects-orbit-ring {
-        width: 210px;
-        height: 210px;
-    }
     .projects-blue-circle {
         width: 180px;
         height: 180px;
     }
     .projects-hero-img {
-        max-height: 140px;
-    }
-    .projects-badge-card {
-        bottom: 4px;
-        padding: 0.25rem 0.8rem;
+        max-height: 150px;
     }
     .projects-hero-title {
         font-size: clamp(2.2rem, 9vw, 3rem);
@@ -2695,9 +2433,9 @@ img {
         gap: 0.4rem !important;
     }
     .projects-pill-btn {
-        font-size: 0.82rem;
-        padding: 0.35rem 0.2rem;
-        letter-spacing: 0.3px;
+        font-size: 0.95rem;
+        padding: 0.35rem 0.3rem;
+        letter-spacing: 0.5px;
     }
     .project-showcase-card {
         padding: 1.1rem 1rem;
